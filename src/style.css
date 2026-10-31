@@ -22,6 +22,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 /* Stolen part ends here(I knew how image insertion and the repeat position size etc. worked beforehand so..*/
 
