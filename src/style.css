@@ -5,6 +5,7 @@ nav {
 
 body {
   text-align: center;
+  height: 80vh;
 }
 
 #datepicker{
@@ -14,9 +15,11 @@ body {
 
 }
 .div2{
-  width: 400px;
+  width: 600px;
   margin: 0 auto;
   border: 10px;
+  color: purple;
+  background: linear-gradient(rgba(0,0,0,0.4),white);
   border-style: solid;
   border-radius: 12px;
   font-family: "Augie", sans-serif;
