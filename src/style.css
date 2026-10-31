@@ -1,9 +1,38 @@
 nav {
   text-align: center;
+  font-family: Aston, cursive;
 }
+
+body {
+  text-align: center;
+}
+
+#datepicker{
+  margin-bottom: 20px;
+}
+.div1{
+
+}
+.div2{
+  width: 400px;
+  margin: 0 auto;
+  border: 10px;
+  border-style: solid;
+  border-radius: 12px;
+  font-family: "Augie", sans-serif;
+}
+
 
 /*font defining*/
 @font-face {
   font-family: "Aston";
-  src: url();
+  src: url("./assets/fonts/Aston_Script.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Augie";
+  src: url("./assets/fonts/augiepixel.ttf");
+  font-weight: normal;
+  font-size: normal;
 }
