@@ -13,14 +13,18 @@ then(data => {
   if (data.media_type==="image"){
     media=`<img src="${data.url}">`
   }
-  else {
-    media=`<video src="${data.url} controls></video>"`
+  else if (data.url.includes("youtube")) {
+    media=`<iframe src="${data.url}" title="${data.title}">`
   }
+  else {
+    media=`<video src="${data.url}" controls></video>`
+  };
   /// I forgot what I was going to write here ig
   document.querySelector("#app").innerHTML=`
   <h1>${data.title}</h1>
-  <img src="${media}">
+  ${media}
   <p>${data.explanation}</p>`
 }).catch(err => {
   document.querySelector("#app").innerHTML=`<h2>Error fetching data :(</h2><p>"${err.message}"</p>`
 });
+ 
