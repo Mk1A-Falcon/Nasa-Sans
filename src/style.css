@@ -1,28 +1,59 @@
 nav {
   text-align: center;
   font-family: Aston, cursive;
+  font-weight: 600px;
+  color: aquamarine;
+}
+nav{
+  color: palevioletred;
+}
+h2{
+  text-decoration: underline;
+}
+/*How to make it covered stolen from a yt tutorial and not ai*/
+html{
+  height: 100%;
 }
 
 body {
+  margin:0;
   text-align: center;
-  height: 80vh;
+  background-image: url(./assets/images/—Pngtree—star\ dust\ abstract\ space\ background_13464652.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+/* Stolen part ends here(I knew how image insertion and the repeat position size etc. worked beforehand so..*/
 
 #datepicker{
   margin-bottom: 20px;
 }
 .div1{
-
+ padding: 20px;
+ border: 4px;
+ border-radius: 12px;
+ border-style: solid;
+ background-color:rgba(95, 158, 160, 0.69);
+ border-color: purple;
+ display: inline-block;
+ transition: box-shadow 2s;
 }
 .div2{
   width: 600px;
   margin: 0 auto;
-  border: 10px;
+  border: 3px;
   color: purple;
-  background: linear-gradient(rgba(0,0,0,0.4),white);
+  background-color: rgba(256,256,256,0.5);
   border-style: solid;
   border-radius: 12px;
+  transition: 2s;
   font-family: "Augie", sans-serif;
+}
+.div1:hover{
+  box-shadow: 0px 0px 10px palevioletred;
+}
+.div2:hover{
+  box-shadow: 0 0 10px rgba(9, 131, 207, 0.829);
 }
 
 
