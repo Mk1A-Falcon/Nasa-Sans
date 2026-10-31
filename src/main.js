@@ -6,4 +6,21 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date_o}`).
 then(response => response.json()).
 then(data => {
   console.log(data);
-})
+  return data;
+}).
+then(data => {
+  let media;
+  if (data.media_type==="image"){
+    media=`<img src="${data.url}">`
+  }
+  else {
+    media=`<video src="${data.url} controls></video>"`
+  }
+  /// I forgot what I was going to write here ig
+  document.querySelector("#app").innerHTML=`
+  <h1>${data.title}</h1>
+  <img src="${media}">
+  <p>${data.explanation}</p>`
+}).catch(err => {
+  document.querySelector("#app").innerHTML=`<h2>Error fetching data :(</h2><p>"${err.message}"</p>`
+});
