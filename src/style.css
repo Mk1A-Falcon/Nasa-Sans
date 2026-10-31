@@ -1,3 +1,9 @@
 nav {
   text-align: center;
 }
+
+/*font defining*/
+@font-face {
+  font-family: "Aston";
+  src: url();
+}
